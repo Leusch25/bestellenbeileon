@@ -62,7 +62,26 @@ function checkout() {
         alert('Ihr Warenkorb ist leer!');
         return;
     }
-    alert('Bestellung erfolgreich! Vielen Dank für Ihren Einkauf.');
+    
+    // Warenkorb-Inhalt für E-Mail zusammenstellen
+    let emailBody = 'Neue Bestellung:\n\n';
+    let total = 0;
+    cart.forEach(item => {
+        emailBody += `${item.name} - €${item.price.toFixed(2)} x ${item.quantity}\n`;
+        total += item.price * item.quantity;
+    });
+    emailBody += `\nGesamt: €${total.toFixed(2)}\n\n`;
+    emailBody += 'Zahlung erfolgt bar bei persönlicher Abholung.\n';
+    emailBody += 'Bitte bestätigen Sie die Bestellung.';
+    
+    // E-Mail-Link erstellen (ersetze 'deine-email@example.com' mit der tatsächlichen E-Mail)
+    const emailSubject = 'Neue Bestellung';
+    const emailLink = `mailto:l.grill@hgs-singen.online?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+    
+    // E-Mail öffnen
+    window.location.href = emailLink;
+    
+    // Warenkorb leeren
     cart = [];
     updateCartDisplay();
     toggleCart();

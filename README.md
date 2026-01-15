@@ -6,7 +6,7 @@ Eine einfache E-Commerce-Bestellseite, ähnlich wie Amazon.
 - Produktliste anzeigen
 - Produkte zum Warenkorb hinzufügen
 - Warenkorb anzeigen und verwalten
-- Einfacher Checkout-Prozess
+- Bestellung per E-Mail senden (Zahlung bar bei Abholung)
 
 ## Wie man es ausführt
 1. Stelle sicher, dass Python installiert ist.
