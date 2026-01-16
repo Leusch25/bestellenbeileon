@@ -4,10 +4,10 @@ let cart = [];
 // Produkte laden
 function loadProducts() {
     const products = [
-        { id: 1, name: 'Laptop', price: 999.99, image: 'https://via.placeholder.com/200x150?text=Laptop' },
-        { id: 2, name: 'Smartphone', price: 599.99, image: 'https://via.placeholder.com/200x150?text=Smartphone' },
-        { id: 3, name: 'Kopfhörer', price: 149.99, image: 'https://via.placeholder.com/200x150?text=Kopfhoerer' },
-        { id: 4, name: 'Tablet', price: 399.99, image: 'https://via.placeholder.com/200x150?text=Tablet' },
+        { id: 1, name: 'Armband', price: 5.00, image: 'https://via.placeholder.com/200x150?text=Armband' },
+        { id: 2, name: 'Schlüsselanhänger Stoff', price: 3.00, image: 'https://via.placeholder.com/200x150?text=Schlüsselanhänger' },
+        { id: 3, name: 'Schlüsselanhänger Paracord', price: 5.00, image: 'https://via.placeholder.com/200x150?text=Kopfhoerer' },
+        { id: 4, name: 'Rest filament vom 3D-Druck-Stift', price: 0.00 , image: 'https://via.placeholder.com/200x150?text=Tablet' },
     ];
 
     const productContainer = document.getElementById('products');
