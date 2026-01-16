@@ -86,3 +86,6 @@ function checkout() {
     updateCartDisplay();
     toggleCart();
 }
+
+// Produkte beim Laden der Seite anzeigen
+loadProducts();
