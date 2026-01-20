@@ -4,9 +4,9 @@ let cart = [];
 // Produkte laden
 function loadProducts() {
     const products = [
-        { id: 1, name: 'Armband', price: 5.00, image: 'https://via.placeholder.com/200x150?text=Armband' },
-        { id: 2, name: 'Schlüsselanhänger Stoff', price: 3.00, image: 'https://files.fm/u/ygtedbra7v' },
-        { id: 3, name: 'Schlüsselanhänger Paracord', price: 5.00, image: '/Paracord.jpg' },
+        { id: 1, name: 'Armband', price: 5.00,
+        { id: 2, name: 'Schlüsselanhänger Stoff', price: 3.00,
+        { id: 3, name: 'Schlüsselanhänger Paracord', price: 5.00,
     ];
 
     const productContainer = document.getElementById('products');
