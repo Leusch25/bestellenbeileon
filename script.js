@@ -86,5 +86,11 @@ function checkout() {
     toggleCart();
 }
 
+// Funktion zum Weiterleiten zum Discord-Server
+function redirectToDiscord() {
+    // Ersetze diesen Link mit dem tatsächlichen Discord-Server-Invite-Link
+    window.open('https://discord.gg/example', '_blank');
+}
+
 // Produkte beim Laden der Seite anzeigen
 loadProducts();
